@@ -1,0 +1,26 @@
+GET http://localhost:3000/hotels
+###
+GET http://localhost:3000/hotels/Wieden
+###
+POST http://localhost:3000/hotels
+Content-Type: application/json
+
+{
+    "name": "Haroon Younas",
+    "preisProNacht": 20,
+    "bewertung": 5,
+    "unterkunftsart": "Hotel",
+    "postleitzahl": 1210
+}
+###
+DELETE http://localhost:3000/hotel/1
+###
+PATCH http://localhost:3000/hotel/2
+Content-Type: application/json
+
+{
+    "name": "Haroon Younas"
+}
+###
+GET http://localhost:3000/hotels/ausstattungen/2
+###
