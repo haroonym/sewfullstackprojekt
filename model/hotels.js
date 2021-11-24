@@ -3,7 +3,7 @@
 const db = require('../db');
 
 const getHotels = async () => {
-  const { rows } = await db.query('SELECT * from hotels');
+  const { rows } = await db.query('SELECT * from hotels order by hotel_id');
   return rows;
 };
 
